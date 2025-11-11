@@ -425,9 +425,10 @@ img {
    /* margin: auto 0; */
 }
 
-.social-item-link:hover,
-.social-item-link:focus {
-    background-color: #404BBF;transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.social-item-icon:hover,
+.social-item-icon.focus,/.contacts-link:active {
+    background-color: #404BBF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-soc {
