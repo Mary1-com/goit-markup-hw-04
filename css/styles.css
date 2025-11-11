@@ -198,12 +198,12 @@ img {
 
 /* #region hero */
 
-.hero {
+.section.hero {
     color:  #f4f4fd;
     width: 100%;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-           url(../images/hero/people-office\ 1-min.jpg);
+           url(../images/hero/people-office.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -470,15 +470,13 @@ img {
     
 }
 
-.portfolio-box:hover, 
-.portfolio-box:focus {
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(0%); */
+.portfolio-box:hover .overlay {
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.portfolio-tumba {
+.container.portfolio-tumba {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
