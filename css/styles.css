@@ -559,7 +559,7 @@ section {}
 .container.footer-container {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline,
+    align-items: baseline;
     gap: 120px;
 }
     
