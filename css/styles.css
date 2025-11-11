@@ -62,6 +62,8 @@ img {
     padding-bottom: 120px;
 }
 
+/* #endregion GLOBAL STYLES */
+
 /* #region header */
 
 .page-header {
@@ -200,13 +202,11 @@ img {
     color:  #f4f4fd;
     width: 100%;
     padding: 188px 0;
-    background-image: 
-           linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)), 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
            url(../images/hero/people-office\ 1-min.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover cover;
+    background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
 
@@ -246,6 +246,7 @@ img {
     border-radius: 4px;
     padding: 16px 32px;
     height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -306,7 +307,10 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     padding: 24px 0;
+    height: 112px;
+    margin-bottom: 8px;
 }
 
 .featureres-icon {
@@ -447,22 +451,30 @@ img {
     row-gap: 48px;
 }
 
+.portfolio-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+
+
+
 .portfolio-box {
-    /* border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
-    border-top: none;
-    padding: 32px 16px;
-    /* width: 360px; */
-    /*margin-bottom: 8px; */
     width: 360px;
     background-color: #fff;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .portfolio-box:hover, 
 .portfolio-box:focus {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0%); */
     
 }
 
@@ -479,9 +491,9 @@ img {
     font: 400 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    padding: 40px 32px 0 32px;
-    width: 360px;
-    height: 300px;
+    padding: 40px 32px;
+    /* width: 360px;
+    height: 300px; */
         position: absolute;
         top: 0;
         left: 0;
@@ -549,6 +561,7 @@ section {}
 .container.footer-container {
     display: flex;
     justify-content: flex-start;
+    align-items: baseline,
     gap: 120px;
 }
     
@@ -560,7 +573,7 @@ section {}
     letter-spacing: 0.02em;
     font-size: 16px;
     font-weight: 400;
-    
+    margin-right: 120px;
  }
 
 .footer-logo-link {
@@ -598,6 +611,7 @@ section {}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .social-media .social-list {
@@ -605,7 +619,7 @@ section {}
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 24px;
+    gap: 16px;
     padding: 16px 0 8px;
 }
 
