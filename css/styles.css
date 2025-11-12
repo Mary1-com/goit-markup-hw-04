@@ -339,9 +339,13 @@ img {
 
 /* #region team  */
 
+.section {}
+
 .team {
     background: #f4f4fd;
 }
+
+.container {}
 
 .container-team {
     margin: auto;
@@ -351,33 +355,36 @@ img {
     margin-bottom: 72px;
 }
 
+.team-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 
+}
+
 .team-item {
     background-color: #fff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.team-ill {}
+
 .team-item-content {
-    padding: 32px 0;
+    padding: 32px 0;    
 }
 
-.team-subtype, 
-.portfolio-subtitle {
+.team-subtype {    
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-}
-
-.team-subtype {
-    text-align: center;
     margin-bottom: 8px;
 }
 
-.team-text,
-.portfolio-text {
+.team-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -386,34 +393,20 @@ img {
     color: #434455;
 }
 
-.team-text {
-    text-align: center;
-}
-
-.team-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px 
-}
-
-
-.team-item-content.social-list {
+.team-social-list {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 24px;
-    padding: 8px 0 8px ;
-}
+    padding: 8px 0 8px ;}
 
-.social-item-icon {
+.team-social-item {
     width: 40px;
     height: 40px;
-        
 }
 
-.social-item-link {
+.team-social-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,23 +416,28 @@ img {
     background-color: #4D5AE5;
     border-radius: 50%;
    /* margin: auto 0; */
-}
 
-.social-item-icon:hover,
-.social-item-icon.focus,/.contacts-link:active {
-    background-color: #404BBF;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-soc {
     fill: #F4F4FD;
 }
 
+.team-social-link:hover,
+.team-social-link:focus,
+.contacts-link:active {
+    background-color: #404BBF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* #endregion team  */
 
 /* #region portfolio  */
+.section {}
 
 .portfolio {}
+
+.container {}
 
 .portfolio-title {
     margin-bottom: 72px;
@@ -459,16 +457,14 @@ img {
 .portfolio-item:hover,
 .portfolio-item:focus .overlay{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .portfolio-box {
     width: 360px;
     background-color: #fff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .portfolio-box:hover .overlay {
@@ -477,7 +473,7 @@ img {
     
 }
 
-.container.portfolio-tumba {
+.portfolio-tumba {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -485,14 +481,17 @@ img {
     overflow: hidden;
 }
 
+.portfolio-ill {}
+
+
 .overlay {
     background-color: #4d5ae5;
     font: 400 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     padding: 40px 32px;
-    /* width: 360px;
-    height: 300px; */
+    width: 360px;
+    height: 300px;
         position: absolute;
         top: 0;
         left: 0;
@@ -500,7 +499,7 @@ img {
         height: 100%;
         transform: translateY(100%); 
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} 
 
 .portfolio-text-block {
     border-bottom: 1px solid #e7e9fc;
@@ -512,8 +511,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-    /* text-align: start; */
+     /* text-align: start; */
 }
 
 .portfolio-text-block:hover,
@@ -521,24 +519,30 @@ img {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
+
     transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-left 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-right 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
     margin-bottom: 8px;
-    font: 500 20px / 1.2 "Roboto", sans-serif;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
 }
 
 .portfolio-text {
-    font: 400 16px / 1.5 "Roboto", sans-serif;
-        letter-spacing: 0.02em;
-        color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
 }
-
 /* #endregion portfolio  */
 
 /* #region footer */
@@ -550,6 +554,7 @@ section {}
     padding: 100px 0;
 }
 
+.container {}
 
 .footer-container {
     display: flex;
@@ -557,7 +562,6 @@ section {}
     align-items: baseline;
     gap: 120px;
 }
-    
 
 .footer-content {
     max-width: 264px;
@@ -594,11 +598,9 @@ section {}
     max-width: 264px
 }
 
-.social-media {
+.footer-social-media {}
 
-}
-
-.social-head {
+.footer-soc-head {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -607,7 +609,7 @@ section {}
     margin-bottom: 16px;
 }
 
-.social-media .social-list {
+.footer-social-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -616,13 +618,12 @@ section {}
     padding: 16px 0 8px;
 }
 
-.social-media .social-item-icon {
+.footer-social-item {
     width: 40px;
     height: 40px;
-
 }
 
-.social-media .social-item-link {
+.footer-social-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -634,13 +635,13 @@ section {}
     /* margin: auto 0; */
 }
 
-.social-item-link:hover,
-.social-item-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
     background-color: #31d0aa;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-soc {
+.footer-social-icon {
     fill: #F4F4FD;
 }
 
